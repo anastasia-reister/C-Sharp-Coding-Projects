@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TwentyOne
+namespace Casino
 {
     public abstract class Game
     {
@@ -24,5 +24,15 @@ namespace TwentyOne
                 Console.WriteLine(player);
             }
         }
+
+        //public static implicit operator Game(global::TwentyOne.TwentyOneGame v)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public static implicit operator Game(global::TwentyOne.TwentyOneGame v)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
