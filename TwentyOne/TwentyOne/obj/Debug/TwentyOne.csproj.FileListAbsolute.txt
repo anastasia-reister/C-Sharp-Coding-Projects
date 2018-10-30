@@ -12,3 +12,6 @@ C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\obj
 C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csproj.CoreCompileInputs.cache
 C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.exe
 C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.pdb
+C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\bin\Debug\Casino.dll
+C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\bin\Debug\Casino.pdb
+C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csproj.CopyComplete

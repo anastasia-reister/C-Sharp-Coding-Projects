@@ -22,6 +22,11 @@ namespace TwentyOne
             if(answer == "yes" || answer == "yea")
             {
                 Player player = new Player(playerName, bank);
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"C:\Users\Nastya\Documents\GitHub\C-Sharp-Coding-Projects\log.txt", true))
+                {
+                    file.WriteLine(player.Id);
+                }
                 Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
