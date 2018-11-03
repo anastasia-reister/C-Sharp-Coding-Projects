@@ -33,9 +33,9 @@ namespace Casino.TwentyOne
                     validBet = int.TryParse(Console.ReadLine(), out bet);
                     if (!validBet) Console.WriteLine("Please enter digits only, no decimals.");
                 }
-                if (bet < 100)
+                if (bet < 0)
                 {
-                    throw new FraudException();
+                    throw new FraudException("Security! Kick this person out.");
                 }
                 bool succesfullyBet = player.Bet(bet);
                 if (!succesfullyBet)

@@ -10,7 +10,7 @@ namespace Casino
     {
         public FraudException()
             : base() { }
-        public FraudException(string message)
-            :base(message) { }
+        public FraudException(string Message)
+            : base(Message) { }
     }
 }
