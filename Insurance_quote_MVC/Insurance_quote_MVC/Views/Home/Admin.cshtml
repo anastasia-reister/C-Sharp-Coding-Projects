@@ -14,16 +14,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                
                     @foreach (var user in Model)
                     {
-                        <th scope="row">1</th>
-                        <td> @Html.ValueFor(modelItem => user.FirstName)</td>
-                        <td> @Html.ValueFor(modelItem => user.LastName)</td>
-                        <td> @Html.ValueFor(modelItem => user.EmailAddress)</td>
-                        <td> @Html.ValueFor(modelItem => user.Quote)</td>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td> @Html.ValueFor(modelItem => user.FirstName)</td>
+                            <td> @Html.ValueFor(modelItem => user.LastName)</td>
+                            <td> @Html.ValueFor(modelItem => user.EmailAddress)</td>
+                            <td> @Html.ValueFor(modelItem => user.Quote)</td>
+                        </tr>
                     }
-                </tr>
+                
             </tbody>
         </table>
    
