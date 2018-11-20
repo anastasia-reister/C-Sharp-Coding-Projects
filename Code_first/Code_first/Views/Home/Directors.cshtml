@@ -1,0 +1,30 @@
+﻿@using Code_first.Models
+@model List<Director>
+
+<div class=" mt-5 table-bordered">
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Country</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var director in Model)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td> @Html.ValueFor(modelItem => director.FirstName)</td>
+                    <td> @Html.ValueFor(modelItem => director.LastName)</td>
+                    <td> @Html.ValueFor(modelItem => director.Country)</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>

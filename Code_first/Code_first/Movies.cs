@@ -5,7 +5,7 @@ namespace Code_first
     using System.Data.Entity;
     using System.Linq;
 
-    public class MoviesContext : DbContext
+    public class Movies : DbContext
     {
         // Your context has been configured to use a 'Movies' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
@@ -13,7 +13,7 @@ namespace Code_first
         // 
         // If you wish to target a different database and/or database provider, modify the 'Movies' 
         // connection string in the application configuration file.
-        public MoviesContext()
+        public Movies()
             : base("name=Movies")
         {
         }

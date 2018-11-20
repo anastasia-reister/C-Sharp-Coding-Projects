@@ -11,7 +11,7 @@ namespace Code_first.Models
         public string Name { get; set; }
         public int Year { get; set; }
         public Director Director { get; set; }
-        public Genre Genre { get; set; }
+       
 
     }
 }

@@ -9,30 +9,44 @@ namespace Code_first.Controllers
 {
     public class HomeController : Controller
     {
-
-        public static void Main(string[] args)
-        {
-            using(var ctx = new MoviesContext())
-            {
-                var film = new Film();
-                    
-                film.Name = "Lion King";
-                ctx.Films.Add(film);
-                ctx.SaveChanges();
-                
-            }
-        }
-
+      
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
+        [HttpPost]
+        public ActionResult directorInfo(string firstName, string lastName, string country)
         {
-            ViewBag.Message = "Your application description page.";
+            using (var ctx = new Movies())
+            {
+                var director = new Director();
 
-            return View();
+                director.FirstName = firstName;
+                director.LastName = lastName;
+                director.Country = country;
+
+                ctx.Directors.Add(director);
+                ctx.SaveChanges();
+
+                return View("Index");
+
+            }
+        }
+
+    
+
+            
+
+        public ActionResult Directors()
+        {
+            
+                using (var db = new Movies())
+                {
+                    return View(db.Directors.ToList());
+                }
+            
+
+            
         }
 
         public ActionResult Contact()
